@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artikel{% endblock %}
+
+{% block body %}
+    <h1>Artikelen</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Naam</th>
+                <th>acties</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for artikel in artikels %}
+            <tr>
+                <td>{{ artikel.id }}</td>
+                <td>{{ artikel.Naam }}</td>
+                <td>
+                    <a class="btn btn-dark" href="{{ path('artikel_show', {'id': artikel.id}) }}">Bekijk</a>
+                    <a class="btn btn-dark" href="{{ path('artikel_edit', {'id': artikel.id}) }}">Bewerk</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">geen artikelen gevonden</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class=" btn btn-dark" href="{{ path('artikel_new') }}">Nieuw</a>
+{% endblock %}
