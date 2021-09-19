@@ -14,6 +14,20 @@
 
         <style>
 
+            body {
+                animation: fadeInAnimation ease 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
 
             .bd-placeholder-img {
                 font-size: 1.125rem;
@@ -21,6 +35,18 @@
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 user-select: none;
+            }
+
+            .navbar-dark .navbar-nav .nav-link {
+                color: white;
+                transition: .5s;
+
+            }
+
+            .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+                color: #2C31AF;
+
+
             }
 
             body{overflow-x: hidden;}
@@ -194,19 +220,20 @@
 
     <body>
 
-    <div class="bs-example header-item">
+
+    <header class="bs-example header-item">
         <nav class="navbar navbar-expand-md navbar-dark">
-            <h1 href="#" class="text-white text-light">ITechler</h1>
+            <h1 href="#" class="text-white text-light ml-2">ITechler</h1>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav d-flex justify-content-end w-100 ">
-                            <a href="#" class="nav-item nav-link text-white">Home</a>
-                            <a href="#" class="nav-item nav-link text-white ">SOC</a>
-                            <a href="#" class="nav-item nav-link text-white ">Smart VR/AR</a>
+                            <a href="#" class="nav-item nav-link">Home</a>
+                            <a href="#" class="nav-item nav-link">SOC</a>
+                            <a href="#" class="nav-item nav-link">Smart VR/AR</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle text-white" data-toggle="dropdown">Smart center</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Smart center</a>
                                 <div class="dropdown-menu">
                                     <a href="#" class="dropdown-item">Building</a>
                                     <a href="#" class="dropdown-item">Energy</a>
@@ -214,9 +241,9 @@
                                     <a href="#" class="dropdown-item">Industry</a>
                                 </div>
                             </div>
-                            <a href="#" class="nav-item nav-link text-white ">Drones en bots</a>
-                            <a href="#" class="nav-item nav-link text-white ">Over</a>
-                            <a href="#" class="nav-item nav-link text-white ">Contact</a>
+                            <a href="#" class="nav-item nav-link">Drones en bots</a>
+                            <a href="#" class="nav-item nav-link">Over</a>
+                            <a href="#" class="nav-item nav-link">Contact</a>
                         </div>
                     </div>
             </nav>
@@ -245,7 +272,7 @@
             <img class="img-fluid mt-5 d-none d-md-block d-lg-block" src="https://i.ibb.co/djMPDyG/kisspng-portable-network-graphics-clip-art-isometric-proje-westland-storage-full-review-is-this-a-go.png">
         </article>
         </section>
-    </div>
+    </header>
 
 
         <main class="container mt-5">
