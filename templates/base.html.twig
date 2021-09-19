@@ -205,6 +205,21 @@
                 padding: 16px;
             }
 
+            .floating {
+                animation-name: floating;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                margin-left: 30px;
+                margin-top: 5px;
+            }
+
+            @keyframes floating {
+                0% { transform: translate(0,  0px); }
+                50%  { transform: translate(0, 15px); }
+                100%   { transform: translate(0, -0px); }
+            }
+
 
 
             .card .card-action a {
@@ -286,7 +301,7 @@
             <button type="button" class="btn btn-outline-light">Over ons</button>
         </article>
         <article class="col-12 col-md-6">
-            <img class="img-fluid mt-5 d-none d-md-block d-lg-block" src="https://i.ibb.co/djMPDyG/kisspng-portable-network-graphics-clip-art-isometric-proje-westland-storage-full-review-is-this-a-go.png">
+            <img class="img-fluid mt-5 d-none d-md-block d-lg-block floating" src="https://i.ibb.co/djMPDyG/kisspng-portable-network-graphics-clip-art-isometric-proje-westland-storage-full-review-is-this-a-go.png">
         </article>
         </section>
     </header>
