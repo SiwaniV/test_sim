@@ -26,19 +26,48 @@
                 color: #2C31AF;
             }
 
+            .item-opdrachten h4{
+                color: #2C31AF;
+            }
 
-            @media (min-width: 768px) {
+            .btn.btn-outline-primary {
+                border-radius: 20px;
+            }
+
+
+            @media (min-width: 1200px) {
                 .bd-placeholder-img-lg {
                     font-size: 3.5rem;
                 }
+
+                .header-item {
+                    background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC);
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    height: 100vh;
+                }
             }
 
-            .header-item {
-                background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC);
-                background-size: 400% 400%;
-                animation: gradient 15s ease infinite;
-                height: 100vh;
+            @media (max-width: 768px) {
+                .header-item {
+                    background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC);
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    height: auto;
+                }
+                .header-item article{margin-top: 5vh}
             }
+
+            @media (min-width: 768px) and (max-width: 1200px) {
+                .header-item {
+                    background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC);
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    height: 86vh;
+                }
+            }
+
+
 
             @keyframes gradient {
                 0% {
@@ -52,6 +81,18 @@
                 }
             }
 
+            .jumbotron {
+                border: 1px solid transparent;
+                border-radius: 110px;
+                background-image: url("https://i.ibb.co/9Ztyqpv/vector-jan-2021-73-generated.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            footer{background-color: #4E54C8;}
+            footer h4{font-weight: bold;}
+
 
 
 
@@ -63,12 +104,12 @@
 
     <div class="bs-example header-item">
         <nav class="navbar navbar-expand-md navbar-dark">
-            <a href="#" class="navbar-brand">ITechler</a>
+            <h1 href="#" class="text-white text-light">ITechler</h1>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav d-flex justify-content-end w-100 mr-5">
+                        <div class="navbar-nav d-flex justify-content-end w-100 ">
                             <a href="#" class="nav-item nav-link text-white">Home</a>
                             <a href="#" class="nav-item nav-link text-white ">SOC</a>
                             <a href="#" class="nav-item nav-link text-white ">Smart VR/AR</a>
@@ -90,7 +131,7 @@
 
         <section class="row justify-content-center align-items-center ml-5">
         <article class="col-12 col-md-6 artikel-item-1 container mt-4 text-white">
-            <h1 class="d-none d-lg-block">
+            <h1 class="d-none d-lg-block font-weight-bold">
                 Technologie is, net als kunst,
                 een stijgende oefening van
                 de menselijke verbeelding
@@ -109,7 +150,7 @@
             <button type="button" class="btn btn-outline-light">Over ons</button>
         </article>
         <article class="col-12 col-md-6">
-            <img class="img-fluid mt-5 d-none d-lg-block" src="https://i.ibb.co/djMPDyG/kisspng-portable-network-graphics-clip-art-isometric-proje-westland-storage-full-review-is-this-a-go.png">
+            <img class="img-fluid mt-5 d-none d-md-block d-lg-block" src="https://i.ibb.co/djMPDyG/kisspng-portable-network-graphics-clip-art-isometric-proje-westland-storage-full-review-is-this-a-go.png">
         </article>
         </section>
     </div>
@@ -119,8 +160,31 @@
             {% block body %}{% endblock %}
         </main>
 
-        <footer class="pt-4 pt-md-5 border-top mt-5">
-
+        <footer class="pl-3 md-2 pt-4 pt-md-5 mt-5 text-white">
+            <div class="mt-1 pt-3 footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <h4>ITechler</h4>
+                            <p class="pr-5">ITechler ondersteunt studenten en docenten met het
+                                geven van informatie op gebied van Smart Technology
+                                en de bijbehorende toepassingen ervan.  </p>
+                        </div>
+                        <div class="col-sm-6 col-md-offset-4 col-md-4">
+                            <h4 class="mt-lg-0 mt-sm-4">Contactinformatie</h4>
+                            <p class="mb-0">ITechler</p>
+                            <p class="mb-0">Parklaan 240</p>
+                            <p class="mb-0">0000 IW Zoetermeer</p>
+                            <p>info@ITechlerService.nl</p>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col copyright">
+                            <p class=""><small class="text-white-50">© ITechler 2021</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
