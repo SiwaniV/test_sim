@@ -94,7 +94,7 @@
                 }
 
                 .header-item {
-                    background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC);
+                    background: linear-gradient(-45deg, #4ADEDE, #1CA7EC, #787FF6, #6495ED);
                     background-size: 400% 400%;
                     animation: gradient 15s ease infinite;
                     height: 100vh;
@@ -103,9 +103,10 @@
 
             @media (max-width: 768px) {
                 .header-item {
-                    background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC);
+                    background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC, #2EECEC);
                     background-size: 400% 400%;
-                    animation: gradient 15s ease infinite;
+                    animation: gradient 6s linear infinite;
+                    animation-direction: alternate;
                     height: auto;
                 }
                 .header-item article{margin-top: 5vh}
@@ -113,9 +114,10 @@
 
             @media (min-width: 768px) and (max-width: 1200px) {
                 .header-item {
-                    background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC);
+                    background: linear-gradient(-45deg, #787FF6, #4ADEDE, #1CA7EC, #2EECEC);
                     background-size: 400% 400%;
-                    animation: gradient 15s ease infinite;
+                    animation: gradient 6s linear infinite;
+                    animation-direction: alternate;
                     height: 86vh;
                 }
             }
