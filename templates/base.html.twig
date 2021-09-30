@@ -292,7 +292,7 @@
                         </div>
                     </div>
             </nav>
-        {% block header %}{% endblock %}
+{% block header %}{% endblock %}
     </header>
 
 
@@ -300,28 +300,8 @@
             {% block body %}{% endblock %}
         </main>
 
-    <footer class="text-left text-lg-start text-white p-3">
-        <div class="container">
-            <div class="row justify-content-between pt-3">
-                <div class="col-sm-4">
-                    <h5>ITechler</h5>
-                    <p>ITechler ondersteunt studenten en docenten met het
-                        geven van informatie op gebied van Smart Technology
-                        en de bijbehorende toepassingen ervan. </p>
-                    <p>© ITechler 2021</p>
-                </div>
-                <div class="col-sm-4">
-                    <h5>Contactinformatie</h5>
-                    <p class="navbar-text">
-                        ITechler <br>
-                        Parklaan 240 <br>
-                        0000 IW Zoetermeer <br>
-                        info@ITechlerService.nl <br>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% block footer %}{% endblock %}
+
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
