@@ -63,6 +63,14 @@
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
 
+.hero-banner{
+    background-image: url("https://zoetermeer.intobusiness.nu/resize/upload/151/15047/thumbnail_DIF%20gebouw%20buiten-NEWSDETAIL.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
         footer{background-color: #4E54C8;}
         footer h4{font-weight: bold;}
 
@@ -91,28 +99,38 @@
                     </div>
                 </div>
                 <a href="#" class="nav-item nav-link">Drones en bots</a>
-                <a href="#" class="nav-item nav-link">Over</a>
+                <a href="/test_sim/public/about" class="nav-item nav-link">Over</a>
                 <a href="#" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
-    </header>{% endblock %}
+    </header>
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <section class="row justify-content-center align-items-center hero-banner">
+        <article class="col-12 col-md-6 artikel-item-1 container mt-4 text-light text-center p-5 m-5">
+            <h1 class="d-none d-lg-block font-weight-bold">
+                Over ons
+            </h1>
+            <h2 class="d-lg-none">Over ons</h2>
+            <p class="mt-4">
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam,
+                eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                consequuntur magni dolores eos qui ratione voluptatem sequi.
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+            </p>
+        </article>
+    </section>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <main class="mt-5">
+        <section class="">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/test_sim/src/Controller/AboutController.php'|file_link(0) }}">src/Controller/AboutController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/test_sim/templates/about/index.html.twig'|file_link(0) }}">templates/about/index.html.twig</a></code></li>
-    </ul>
-</div>
+        </section>
+    </main>
+
 {% endblock %}
 
 {% block footer %}
