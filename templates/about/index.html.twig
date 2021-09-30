@@ -1,0 +1,141 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AboutController!{% endblock %}
+
+{% block stylesheet %}
+    <style>
+        body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        .dropdown-menu {
+            border: 1px solid transparent;
+            background-color: transparent;
+
+        }
+
+        .dropdown-item {
+            color: blue;
+            transition: .5s;
+        }
+
+        .dropdown-item:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: blue;
+            transition: .5s;
+
+        }
+
+        .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+            color: #2C31AF;
+
+        }
+
+        .header-item h1{color: blue}
+
+        body{overflow-x: hidden;}
+
+
+        .navbar-dark .navbar-toggler {
+            border-color: transparent;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='blue' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar-dark .navbar-toggler-icon:hover {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        footer{background-color: #4E54C8;}
+        footer h4{font-weight: bold;}
+
+    </style>
+{% endblock %}
+
+{% block header %}
+<header class="bs-example header-item">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <h1 href="#" class="ml-2">ITechler</h1>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav d-flex justify-content-end w-100 ">
+                <a href="http://127.0.0.1:8000/test_sim/public/" class="nav-item nav-link">Home</a>
+                <a href="#" class="nav-item nav-link">SOC</a>
+                <a href="#" class="nav-item nav-link">Smart VR/AR</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Smart center</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Building</a>
+                        <a href="#" class="dropdown-item">Energy</a>
+                        <a href="#" class="dropdown-item">Mobility</a>
+                        <a href="#" class="dropdown-item">Industry</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link">Drones en bots</a>
+                <a href="#" class="nav-item nav-link">Over</a>
+                <a href="#" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    </header>{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/test_sim/src/Controller/AboutController.php'|file_link(0) }}">src/Controller/AboutController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/test_sim/templates/about/index.html.twig'|file_link(0) }}">templates/about/index.html.twig</a></code></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block footer %}
+    <footer class="text-left text-lg-start text-white p-3">
+        <div class="container">
+            <div class="row justify-content-between pt-3">
+                <div class="col-sm-4">
+                    <h5>ITechler</h5>
+                    <p>ITechler ondersteunt studenten en docenten met het
+                        geven van informatie op gebied van Smart Technology
+                        en de bijbehorende toepassingen ervan. </p>
+                    <p>© ITechler 2021</p>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Contactinformatie</h5>
+                    <p class="navbar-text">
+                        ITechler <br>
+                        Parklaan 240 <br>
+                        0000 IW Zoetermeer <br>
+                        info@ITechlerService.nl <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
