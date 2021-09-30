@@ -9,6 +9,7 @@
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
         }
+
         @keyframes fadeInAnimation {
             0% {
                 opacity: 0;
@@ -46,9 +47,13 @@
 
         }
 
-        .header-item h1{color: blue}
+        .header-item h1 {
+            color: blue
+        }
 
-        body{overflow-x: hidden;}
+        body {
+            overflow-x: hidden;
+        }
 
 
         .navbar-dark .navbar-toggler {
@@ -63,58 +68,62 @@
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
 
-.hero-banner{
-    background-image: url("https://zoetermeer.intobusiness.nu/resize/upload/151/15047/thumbnail_DIF%20gebouw%20buiten-NEWSDETAIL.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    min-height: 100%;
-    min-width: 1024px;
+        .hero-banner {
+            background-image: url("https://zoetermeer.intobusiness.nu/resize/upload/151/15047/thumbnail_DIF%20gebouw%20buiten-NEWSDETAIL.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            min-height: 100%;
+            min-width: 1024px;
 
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
+            /* Set up proportionate scaling */
+            width: 100%;
+            height: auto;
 
-    /* Set up positioning */
+            /* Set up positioning */
 
-}
+        }
 
 
+        footer {
+            background-color: #4E54C8;
+        }
 
-        footer{background-color: #4E54C8;}
-        footer h4{font-weight: bold;}
+        footer h4 {
+            font-weight: bold;
+        }
 
     </style>
 {% endblock %}
 
 {% block header %}
-<header class="bs-example header-item">
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <h1 href="#" class="ml-2">ITechler</h1>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav d-flex justify-content-end w-100 ">
-                <a href="http://127.0.0.1:8000/test_sim/public/" class="nav-item nav-link">Home</a>
-                <a href="#" class="nav-item nav-link">SOC</a>
-                <a href="#" class="nav-item nav-link">Smart VR/AR</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Smart center</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Building</a>
-                        <a href="#" class="dropdown-item">Energy</a>
-                        <a href="#" class="dropdown-item">Mobility</a>
-                        <a href="#" class="dropdown-item">Industry</a>
+    <header class="bs-example header-item">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <h1 href="#" class="ml-2">ITechler</h1>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav d-flex justify-content-end w-100 ">
+                    <a href="http://127.0.0.1:8000/test_sim/public/" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">SOC</a>
+                    <a href="#" class="nav-item nav-link">Smart VR/AR</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Smart center</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Building</a>
+                            <a href="#" class="dropdown-item">Energy</a>
+                            <a href="#" class="dropdown-item">Mobility</a>
+                            <a href="#" class="dropdown-item">Industry</a>
+                        </div>
                     </div>
+                    <a href="#" class="nav-item nav-link">Drones en bots</a>
+                    <a href="/test_sim/public/about" class="nav-item nav-link">Over</a>
+                    <a href="#" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="#" class="nav-item nav-link">Drones en bots</a>
-                <a href="/test_sim/public/about" class="nav-item nav-link">Over</a>
-                <a href="#" class="nav-item nav-link">Contact</a>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
 {% endblock %}
 
